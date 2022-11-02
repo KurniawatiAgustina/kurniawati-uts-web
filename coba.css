@@ -1,0 +1,425 @@
+* {
+    margin: 0; 
+    padding: 0;
+    background-color:#e9ecef;
+    box-sizing: border-box;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ----- start styling navbar ----- */
+.header {
+    /* width: 100%; */
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header > nav {
+    padding: 10px 20px 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header > nav > ul {   
+    width: 50%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > nav > ul > li { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    font-size: 17px;
+    color: black;
+
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.header a:hover {
+    background-color:#20B2AA;
+}
+
+.active { 
+    background-color:#20B2AA;
+}
+
+.header img {
+    width: 200px;
+    height: 200px;
+}
+
+/* ----- end styling navbar ----- */
+
+/* ----- start styling about ----- */
+
+.about{
+    max-width: auto;
+    height: 690px;
+    position: relative;
+    margin-top: 260px;
+}
+.coba1,.coba2,.coba3,.coba4 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.coba1 {
+    background: url(img/coba1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 5s infinite;
+    -webkit-animation: fade 5s infinite;
+}
+.coba2 {
+    background: url(img/cobania3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 5s infinite;
+    -webkit-animation: fade2 5s infinite;
+}
+.coba3 {
+    background: url(img/cobania.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 5s infinite;
+    -webkit-animation: fade3 5s infinite;
+}
+.coba4 {
+    background: url(img/cobania1.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade3 5s infinite;
+    -webkit-animation: fade3 5s infinite;
+}
+@keyframes fade{
+    0%{opacity: 1;}
+    33.333% {opacity: 0;}
+    66.666%{opacity: 0;}
+    100% {opacity: 1;}
+
+}
+@keyframes fade2{
+    0%{opacity: 0;}
+    33.333% {opacity: 1;}
+    66.666%{opacity: 0;}
+    100% {opacity: 0;}
+
+}
+@keyframes fade3{
+    0%{opacity: 0;}
+    33.333% {opacity: 0;}
+    66.666%{opacity: 1;}
+    100% {opacity: 0;}
+
+}
+@keyframes fade4{
+    0%{opacity: 0;}
+    33.333% {opacity: 0;}
+    66.666%{opacity: 1;}
+    100% {opacity: 0;}
+
+}
+
+/* ----- end styling about ----- */
+
+/* ----- start styling home ----- */
+.homenia .menu-1, .menu-2 { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homenia .img-1, .img-2 {
+    width: 600px;
+    height: 600px; 
+}
+.homenia .text-2{
+    float: right;
+    margin-top: -20%;
+    margin-right: 200px;
+}
+
+.menu-1 { 
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.homenia h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.homenia h1 {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.homenia h5 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 30px;
+}
+.img-1{
+    max-width: auto;
+    height: 700px;
+    position: relative;
+    margin-top: 250px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.homenia home{
+    width: 540px;
+    margin: 40px auto;
+    overflow: auto;
+}
+.slider-inner{
+	width:500px;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+	border:#666 solid 1px;
+}
+
+.slider-inner img{
+	display:none;
+	width:500px;
+	height:300px;
+}
+
+.slider-inner img.active{
+	display:inline-block;
+}
+
+.prev,.next{
+	float:left;
+	margin-top:130px;
+	cursor: pointer;
+}
+
+.prev{
+	position:relative;
+	margin-right:-45px;
+	z-index:100;
+}
+
+.next{
+	position:relative;
+	margin-left:-45px;
+	z-index:100;
+}
+
+
+
+
+/* ----- end  styling home ----- */
+ 
+/* ----- start styling menu ----- */
+.menunia {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: #5F9EA0;
+}
+
+.menunia .wrapper {
+   
+    margin: 70px auto;
+    margin-bottom: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:#5F9EA0;
+}
+
+.menunia .wrapper .catalog-item {
+    width: 200px;
+    height: 250px;
+
+    border-radius: 10px;
+    border: 3px soli  #5F9EA0;
+    background-color: #5F9EA0;
+
+    text-align: center;
+}
+
+.menunia h1 {
+    margin-top: 200px;
+    background-color: #5F9EA0;
+    text-align: center;
+}
+
+/* ----- end styling menu ----- */
+.menunia>.wrapper .catalog-item img{
+    width: 180px;
+    height: 180px;
+
+}
+/* ----- end styling menu ----- */
+
+/*----- start kasir -----*/
+.login {
+    padding: 1em;
+    margin: 2em auto;
+    width: 50em;
+    background: #fff;
+    border-radius: 3px;
+}
+label {
+    font-size: 10pt;
+    color: black;
+}
+input[type="text"],
+textarea {
+    padding: 8px;
+    width: 95%;
+    background: #20B2AA;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px;
+}
+
+.tombol {
+    background:  rgb(236, 231, 78);
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+}
+
+.hasil {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.kasirnia{
+    height: 100vh;
+    margin-top: 100px;
+
+    padding-inline: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.kasirnia input, .kasirnia textarea{
+    width: 450px;
+  
+}
+hr{
+    width: 700px;
+}
+button{
+    font-size: 25px;
+}
+
+.kasirnia h2 {
+    margin-top: 300px;
+}
+/*----- end kasir -----*/
+
+/*----- start sosmed -----*/
+.sosmednia {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    box-sizing: border-box;
+}
+
+.sosmednia h2 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.sosmednia .center {
+    text-align: center;
+}
+
+.sosmed > ul  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sosmed > ul > li {
+    margin-right: 30px;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.sosmed img {
+    width: 50px;
+    height: 50px;
+}
+
+.sosmed p > a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: blue;
+}
+
+.niamenu {
+    background-color: #5F9EA0;
+    width: 100%;
+
+    padding: 10px 10em 10px 10em;
+    box-sizing: border-box;
+} 
+
+.niamenu img {
+    width: 600px;
+    height: 350px;
+}
+
+.niaa {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5F9EA0;
+}
+
+.niamenu .niaa .niatitle > h2 {
+    background-color: #5F9EA0;
+}
+
+.niamenu .niaa .niatitle > p {
+    background-color: #5F9EA0;
+}
+/*----- start sosmed -----*/
